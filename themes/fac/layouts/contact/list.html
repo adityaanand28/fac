@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="contact-form">
+  <div class="container">
+    <div class="row">
+      <form method="POST" action="sendmail.php">
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group">
+              <input required="true" name="user_name" type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input required="true"  name="user_email" type="text" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input  required="true"  name="user_subject" type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group-2">
+              <textarea required="true"  name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="contact-box row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>{{ i18n "address_title" }}</h2>
+          <ul class="address-block">
+            <li><i class="ion-ios-location-outline"></i>{{i18n "location"}}: {{ site.Params.location }}</li>
+            <li><i class="ion-ios-email-outline"></i>{{i18n "email"}}: {{ site.Params.email }}</li>
+            <li><i class="ion-ios-telephone-outline"></i>{{i18n "phone"}}: {{ site.Params.phone }}</li>
+          </ul>
+          <ul class="social-icons">
+            {{ range site.Params.social }}
+            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ if site.Params.gmap.enable }}
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="google-map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7140.468576378976!2d80.23367247617216!3d26.51258841461918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3afbe880abc38436!2sIndian%20Institute%20of%20Technology%20Kanpur!5e0!3m2!1sen!2sin!4v1601165125753!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
