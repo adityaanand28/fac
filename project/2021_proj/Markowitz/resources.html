@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Fundamental Analysis</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="DCF valuation is used to evaluate the company&#39;s performance and predicting them for the future, using the three most fundamental statements - Balance sheet, income statement and Cash flow statement">
+  <meta name="author" content="Finance and Analytics Club">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://students.iitk.ac.in/fac/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://students.iitk.ac.in/fac/plugins/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="https://students.iitk.ac.in/fac/plugins/magnific-popup/magnific-popup.css">
+  
+  <link rel="stylesheet" href="https://students.iitk.ac.in/fac/plugins/slick/slick.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://students.iitk.ac.in/fac/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://students.iitk.ac.in/fac/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="https://students.iitk.ac.in/fac/images/logo.png" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/fac">
+              <img src="https://students.iitk.ac.in/fac/images/logo.png" alt="Finance and Analytics Club" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/fac">Home</a></li>
+              
+              
+              
+              <li><a href="/fac/about">About</a></li>
+              
+              
+              
+              <li><a href="/fac/project">Project</a></li>
+              
+              
+              
+              <li><a href="/fac/events">Events</a></li>
+              
+              
+              
+              <li><a href="/fac/team">Our Team</a></li>
+              
+              
+              
+              <li><a href="/fac/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/fac/contact">Contact</a></li>
+              
+              
+
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://students.iitk.ac.in/images/featue-bg.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Markowitz Portfolio</h1>
+          <p>Implementing Markowitz Portfolio Theory and plotting Efficient Frontier to finding optimal and diverse portfolio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <img class="img-responsive w-100" src="/fac/project/2021_proj/Markowitz/Markowitz.jpg" alt="" width="">
+      </div>
+      <div class="col-md-4">
+        <div class="project-details">
+          <h4>Project Details</h4>
+          <ul>
+            
+            <li><span>Project Period :</span> <strong>Summer Project 2021</strong></li>
+            
+            <li><span>Completed on :</span> <strong>29th July 2021</strong></li>
+            
+            <li><span>Software used :</span> <strong>Python Libraries- Numpy, Pandas, Matplotlib</strong></li>
+            
+            <!-- <li><span>Skills :</span> <strong>Micro and Macro Economics</strong></li> -->
+            
+          </ul>
+      
+          <h2>Share:- </h2>
+          <div id="share-buttons"> 
+           
+          <a href="https://www.facebook.com/sharer.php?u=https://students.iitk.ac.in/fac/project/fundamental-analysis" target="_blank"><img src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGSA/zs-kwq0q58E/s1600/facebook.png" alt="Facebook" /></a>
+           
+          <a href="https://twitter.com/share?url=https://students.iitk.ac.in/fac/project/fundamental-analysis&text=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/--ISQEurz3aE/UwNI4hDaQMI/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter" /></a> 
+           
+          <a href="https://plus.google.com/share?url=https://students.iitk.ac.in/fac/project/fundamental-analysis" target="_blank"><img src="https://2.bp.blogspot.com/-9ijXNtKTaSk/UwNI3ANT4MI/AAAAAAAAGSY/Tu4kE8x9SnI/s1600/google.png" alt="Google" /></a> 
+            
+           <a href="http://reddit.com/submit?url=https://students.iitk.ac.in/fac/project/fundamental-analysis&title=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/-1-mZEa1eiyc/UwNI4JytiFI/AAAAAAAAGSs/AoKmBkkJR-s/s1600/reddit.png" alt="Reddit" /></a>
+             
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://students.iitk.ac.in/fac/project/fundamental-analysis" target="_blank"><img src="https://2.bp.blogspot.com/-3_cATk7Wlho/UwNI3eoTTLI/AAAAAAAAGSQ/Y8cpq6S-SeQ/s1600/linkedin.png" alt="LinkedIn" /></a> 
+       </div>
+       
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project-content mt-50">
+            <blockquote>
+                <h2 id="our-full-documentationhttpsdrivegooglecomfiled1crvdj5pceopfaplz6pesggbt30gmgjkrviewuspsharing-documentation---fundamental-analysis">Resources</h2>
+            </blockquote>
+            <li><a href="https://www.anaconda.com/products/individual">Jupyter notebook through Anaconda distribution</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=LrMOrMb8-3s">For Jupyter installation</a></li>
+            <li><a href="Python Basics.zip">Python Basics</a></li>
+            <li><a href="01_SF_Salaries_Exercise.ipynb">Panda practice 1</a></li>
+            <li><a href="Salaries.csv">Panda practice 2</a></li>
+            <li><a href="Investment Science ( PDFDrive ).pdf">Investment Science (refer Chapter 6&7)</a></li>
+            <li><a href="https://hbr.org/1982/01/does-the-capital-asset-pricing-model-work">Capital Asset Pricing Model</a></li>
+
+            <br>
+            <blockquote>
+              <h2
+                id="our-full-documentationhttpsdrivegooglecomfiled1crvdj5pceopfaplz6pesggbt30gmgjkrviewuspsharing-documentation---fundamental-analysis">
+                Assignment</h2>
+            </blockquote>
+
+            <div class="" id="">
+              <h5 class="mb-0">
+                <li class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Assignment 1
+                </li>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Those who haven't taken up HSO201/MSO201 (or any course on Probability & Statistics), you're first expected to go through the concept of Volatility/ Standard Deviation.
+                <br>
+                1. Read up about Volatility of a Stock price series. It is used as a proxy for the risk associated with a stock. In simple terms. the more variable/fluctuating the time series data is, the higher is the risk of holding onto that investment. (You have more chance of losing big bucks if the price of a stock falls, say, 20% in a single day)
+                <br>
+                2. CAGR (Compounded Annual Growth Rate) represents the annual growth of an investment over a particular time period. (In simple terms: If you've held onto the stock for 3 years, then the amount you've earned every year)
+                <br>
+                3. Sharpe Ratio: Risk-Adjusted Return. Excess return that an investment earns relative to the risk it carries with itself. (aim is to look for stocks having high returns with low risk)
+                <br>
+                <b>Task:</b>
+                Define 3 functions to calculate Volatility, CAGR and Sharpe Ratio of a stock price series.
+                In the calculation of Sharpe Ratio, take the Expected Portfolio Return = CAGR & Risk-free rate = 6% (0.06).
+                Data Set:  NIFTY 50 stocks (Time Period: 01/01/2016 - 01/01/2020)
+                Identify the top 15 stocks having the highest Sharpe Ratio.
+                <br>
+                Reference Links:
+                <br><a href="https://www.investopedia.com/terms/v/volatility.asp#:~:text=Volatility%20is%20a%20statistical%20measure,given%20security%20or%20market%20index.&text=For%20example%2C%20when%20the%20stock,factor%20when%20pricing%20options%20contracts.">Link1</a>
+                <br><a href="https://corporatefinanceinstitute.com/resources/knowledge/finance/sharpe-ratio-definition-formula/">Link2</a>
+                <br><a href="https://groww.in/p/cagr-compounded-annual-growth-rate/">Link3</a>
+                <br><a href="https://cleartax.in/s/what-is-cagr-and-how-is-it-useful#:~:text=Annualised%20return%20is%20an%20extrapolated,yearly%20growth%20of%20your%20investments.&text=The%20CAGR%20Ratio%20shows%20you,with%20the%20higher%20CAGR%20Ratio.">Link4</a>
+                <br>
+                <li><a href="MPT -- Assignment 1 (Hints).ipynb">Assignment 1 hints (.ipynb file, open with jupyter/google collab)</a></li>
+
+              </div>
+            </div>
+
+
+            <div class="" id="">
+              <h5 class="mb-0">
+                <li class="btn " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Assignment 2
+                </li>
+              </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                1. The attached Python code also contains the correct answers to the Previous Assignment. You're all supposed to use the 15 stocks obtained in the current Python file and use them further. (Run it on your  pc first, reading the data of nifty50 csv I shared with you earlier)
+                        <br>
+                        2. Calculate Log Returns of the 15 stocks
+                        <br>
+                        3. Initialize random weights (A very large number ~600000 is taken) to have a good representative sample to choose from
+                        <br>
+                        4. Obtain 600000 random set of weights for 15 stocks, the expected return, volatility & sharpe ratio of the portfolio corresponding to those weights.
+                        <br>
+                        5. Identify the Max Sharpe Ratio of the Portfolio from the random weights & Plot the return & volatility of the portfolios on a Scatter Plot
+                        <br>
+                        6. Plot the Efficient Frontier using SLSQP method (already coded)
+                        <br>
+                        7. Total amt = 1,00,00,000. Obtain the Amount of Money Invested in each stock & the number of shares held of each (on the last testing day). We'll test the weights and trade them for the months in 2021. 
+                        <br>
+                        <a href="MPT -- Assignment 2.ipynb">Assignment 2 file (.ipynb file, open with jupyter/google collab)</a>
+
+              </div>
+            </div>
+            <div class="" id="">
+              <h5 class="mb-0">
+                <li class="btn " data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Assignment 3
+                </li>
+              </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                In the previous assignment, we have obtained optimal weights ( weights corresponding to Maximum Sharpe Ratio) for 15 stocks & obtained Efficient Frontier as well. We divided our total money according to those weights & bought a corresponding number of shares for each stock. For now, our portfolio contains 15 stocks.
+                        <br>In this assignment, we need to trade the portfolio by holding it over the Testing Period.
+                        <br>Metrics to evaluate Portfolio:
+                        <br>1) Total Return on Portfolio
+                        <br>2) Volatility
+                        <br>3) Beta
+                        <br>4) Sharpe Ratio
+                        <br>5) Jenson's Alpha
+                        <br>6) Sortino Ratio
+                        <br>7) Treynor's Ratio
+                        <br>You need to compare all these metrics wrt the Benchmark i.e. Nifty50 & report all the results.
+                        <br>Now, we'll go one-step further to better our Portfolio. We'll observe that these 15 stock portfolio doesn't give good returns as what one should expect. This might be because 15 stocks is a large number to have in a portfolio.  (You all are encouraged to think of other ways to improve the performance, for now, you are supposed to the complete the below task)
+                        <br>We've read that diversifying our portfolio reduces risk (having uncorrelated stocks in a portfolio is better from a risk-perspective)
+                        <br>What you need to do now is create a correlation matrix (using .corr() function ) for the 15 stock prices. This will result in 15*15 matrix. We need to identify a group of 4 such stocks which have the minimum correlation (i.e. corr(1,2) + corr(1,3) + corr(1,4) + corr(2,3) + corr(2,4) + corr(3,4) is minimum).
+                        <br>After identifying 4 stocks, we'll repeat the same process, obtain optimal weights for Markowitz portfolio, number of shares to be held in the testing period & compare the metrics wrt the Benchmark performance.
+                    </li>
+                    <li><a href="MPT -- Assignment 3 (Hints)  (1).ipynb">Assignment 3 hints (.ipynb file, open with jupyter/google collab)</a></li>
+ 
+              </div>
+            </div>
+
+            <!--  -->
+            <!-- <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Week #0- Familarization with tools:-
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <li><a href="https://www.anaconda.com/products/individual">Jupyter notebook through Anaconda distribution</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=LrMOrMb8-3s">For Jupyter installation</a></li>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Week #1
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <li>Assignment 1-
+                        <br>
+                        Those who haven't taken up HSO201/MSO201 (or any course on Probability & Statistics), you're first expected to go through the concept of Volatility/ Standard Deviation.
+                        <br>
+                        1. Read up about Volatility of a Stock price series. It is used as a proxy for the risk associated with a stock. In simple terms. the more variable/fluctuating the time series data is, the higher is the risk of holding onto that investment. (You have more chance of losing big bucks if the price of a stock falls, say, 20% in a single day)
+                        <br>
+                        2. CAGR (Compounded Annual Growth Rate) represents the annual growth of an investment over a particular time period. (In simple terms: If you've held onto the stock for 3 years, then the amount you've earned every year)
+                        <br>
+                        3. Sharpe Ratio: Risk-Adjusted Return. Excess return that an investment earns relative to the risk it carries with itself. (aim is to look for stocks having high returns with low risk)
+                        <br>
+                        <b>Task:</b>
+                        Define 3 functions to calculate Volatility, CAGR and Sharpe Ratio of a stock price series.
+                        In the calculation of Sharpe Ratio, take the Expected Portfolio Return = CAGR & Risk-free rate = 6% (0.06).
+                        Data Set:  NIFTY 50 stocks (Time Period: 01/01/2016 - 01/01/2020)
+                        Identify the top 15 stocks having the highest Sharpe Ratio.
+                    </li>
+                    <li><a href="MPT -- Assignment 1 (Hints).ipynb">Assignment 1 hints (.ipynb file, open with jupyter/google collab)</a></li>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Week #2
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <li><a href="Investment Science ( PDFDrive ).pdf">Investment Science (refer Chapter 6&7)</a></li>
+                    <li><b>Assignment-2</b> 
+                        <br>
+                        1. The attached Python code also contains the correct answers to the Previous Assignment. You're all supposed to use the 15 stocks obtained in the current Python file and use them further. (Run it on your  pc first, reading the data of nifty50 csv I shared with you earlier)
+                        <br>
+                        2. Calculate Log Returns of the 15 stocks
+                        <br>
+                        3. Initialize random weights (A very large number ~600000 is taken) to have a good representative sample to choose from
+                        <br>
+                        4. Obtain 600000 random set of weights for 15 stocks, the expected return, volatility & sharpe ratio of the portfolio corresponding to those weights.
+                        <br>
+                        5. Identify the Max Sharpe Ratio of the Portfolio from the random weights & Plot the return & volatility of the portfolios on a Scatter Plot
+                        <br>
+                        6. Plot the Efficient Frontier using SLSQP method (already coded)
+                        <br>
+                        7. Total amt = 1,00,00,000. Obtain the Amount of Money Invested in each stock & the number of shares held of each (on the last testing day). We'll test the weights and trade them for the months in 2021. 
+                        <br>
+                        <a href="MPT -- Assignment 2.ipynb">Assignment 2 file (.ipynb file, open with jupyter/google collab)</a>
+                    </li>
+                    <li><b>Assignment-3</b> 
+                        <br>
+                        In the previous assignment, we have obtained optimal weights ( weights corresponding to Maximum Sharpe Ratio) for 15 stocks & obtained Efficient Frontier as well. We divided our total money according to those weights & bought a corresponding number of shares for each stock. For now, our portfolio contains 15 stocks.
+                        <br>In this assignment, we need to trade the portfolio by holding it over the Testing Period.
+                        <br>Metrics to evaluate Portfolio:
+                        <br>1) Total Return on Portfolio
+                        <br>2) Volatility
+                        <br>3) Beta
+                        <br>4) Sharpe Ratio
+                        <br>5) Jenson's Alpha
+                        <br>6) Sortino Ratio
+                        <br>7) Treynor's Ratio
+                        <br>You need to compare all these metrics wrt the Benchmark i.e. Nifty50 & report all the results.
+                        <br>Now, we'll go one-step further to better our Portfolio. We'll observe that these 15 stock portfolio doesn't give good returns as what one should expect. This might be because 15 stocks is a large number to have in a portfolio.  (You all are encouraged to think of other ways to improve the performance, for now, you are supposed to the complete the below task)
+                        <br>We've read that diversifying our portfolio reduces risk (having uncorrelated stocks in a portfolio is better from a risk-perspective)
+                        <br>What you need to do now is create a correlation matrix (using .corr() function ) for the 15 stock prices. This will result in 15*15 matrix. We need to identify a group of 4 such stocks which have the minimum correlation (i.e. corr(1,2) + corr(1,3) + corr(1,4) + corr(2,3) + corr(2,4) + corr(3,4) is minimum).
+                        <br>After identifying 4 stocks, we'll repeat the same process, obtain optimal weights for Markowitz portfolio, number of shares to be held in the testing period & compare the metrics wrt the Benchmark performance.
+                    </li>
+                    <li><a href="MPT -- Assignment 3 (Hints)  (1).ipynb">Assignment 3 hints (.ipynb file, open with jupyter/google collab)</a></li>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!--  -->
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+ #share-buttons img { width: 55px; padding: 5px; border: 0; box-shadow: 0; display: inline; }
+</style>
+
+  
+  
+    <footer class="site-footer" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-offset-1 col-md-4">
+            <h2>About</h2>
+          
+            <p class="text-justify" style ="font-size:16px ;color:#737373;">The Finance and Analytics Club, IIT Kanpur is one of the largest professional clubs on campus, hosting a full schedule of events to help everyone from those with no background in finance to those coming from finance looking to switch focus within the industry.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-offset-1 col-md-2">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="">Home</a></li>
+              <li><a href="/fac/about">About</a></li>
+              <li><a href="/fac/project">Projects</a></li>
+              <li><a href="/fac/events">Events</a></li>
+              <li><a href="/fac/blog">Blog</a></li>
+              <li><a href="/fac/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-offset-1 col-md-2">
+            <h2>IITK Links</h2>
+            <ul class="footer-links">
+              <li><a href="https://www.iitk.ac.in/">IITK Homepage</a></li>
+              <li><a href="https://students.iitk.ac.in/gymkhana/">Students' Gymkhana</a></li>
+              <li><a href="https://students.iitk.ac.in/snt/">Science and Technology Council</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="  col-md-offset-1 col-md-4 col-sm-6 col-xs-12">
+            <p class="copyright-text" style ="font-size:14px;">Copyright &copy; 2020
+         <a href="https://students.iitk.ac.in/fac">Finance and Analytics Club , IIT Kanpur</a>.
+            </p>
+          </div>
+          <div class=" col-md-3 col-sm-offset-1 col-sm-6 col-xs-12">
+            <p class="copyright-text" style ="font-size:16px;">Designed by :
+         <a href="https://itsgyanendra.github.io/gyan/"><strong>Gyanendra Kumar</strong></a>
+          <a href="https://itsgyanendra.github.io/gyan/"><i class="fa fa-external-link" style="color:white;"></i></a>
+            </p>
+          </div>
+
+         
+        </div>
+      </div>
+</footer>
+<style>
+.site-footer
+{
+  background-color:#090606;
+  padding:45px 0 20px;
+  font-size:16px;
+  line-height:34px;
+  color:white;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+  font-size :12px;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+
+
+
+
+<script src="https://students.iitk.ac.in/fac/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://students.iitk.ac.in/fac/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://students.iitk.ac.in/fac/plugins/slick/slick.min.js"></script>
+
+<script src="https://students.iitk.ac.in/fac/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="https://students.iitk.ac.in/fac/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://students.iitk.ac.in/fac/plugins/google-map/gmap.js"></script>
+
+
+
+
+<script src="https://students.iitk.ac.in/fac/js/script.min.js"></script>
+
+
+
+</body>
+
+</html>
